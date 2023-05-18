@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "468859e1-0572-43ba-8dfe-851f35de4f54",
+		"name": "API Medicine Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26723141"
+	},
+	"item": [
+		{
+			"name": "get all medicines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/medicines",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"medicines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new medicine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"NNN\",\r\n    \"name\": \"Paramex\",\r\n    \"information\": \"Aut sint consequatur aut nesciunt consequatur aut enim rerum quo accusamus dignissimos. Sed cupiditate voluptatem cum commodi quos in galisum aliquam.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/medicines",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"medicines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update medicine",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"12345666\",\r\n    \"name\": \"Sanmol\",\r\n    \"information\": \"Aut sint consequatur aut nesciunt consequatur aut enim rerum quo accusamus dignissimos. Sed cupiditate voluptatem cum commodi quos in galisum aliquam.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/medicines/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"medicines",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete medicine",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/medicines/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"medicines",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get medicine by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/medicines/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"medicines",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
